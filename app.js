@@ -103,7 +103,7 @@ app.use('/api', limiter);
 // to parse the data coming from html form
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
-// body parser, reading data from body into req.body
+// body parser, reading data from body into req.body. start express app
 app.use(
     express.json({
         limit: '10kb', // body having size bigger than 10kb will not be accepted
